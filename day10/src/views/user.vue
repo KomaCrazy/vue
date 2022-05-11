@@ -52,7 +52,7 @@ table{
   
 }
 th,tr,td{  
-  border: 2px solid #000000;
+  border: 1px solid #b9b9b9;
   padding: 6px;
 
 }
