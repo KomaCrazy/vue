@@ -1,15 +1,22 @@
 <template>
   <div class="user">
-    <h1>table</h1>
-  <table class="cen">
-    <th>id</th>
-    <th>user</th>
-    <th>password</th>
-    <th>age</th>
-    <th>contact</th>
-    <a v-for="item in list" :key="item.id">  
-  
-     </a>
+	<table>
+        <tr>
+            <h1>Table</h1>
+        </tr>
+        <th>Id</th>
+        <th>user</th>
+        <th>password</th>
+        <th>age</th>
+        <th>contact</th>
+            <tr v-for="item in list" :key="item.id">
+            <th>{{item.id}}</th>
+            <th>{{item.user}}</th>
+            <th>{{item.password}}</th>
+            <th>{{item.age}}</th>
+            <th>{{item.contact}}</th>
+            </tr>
+            
 </table>
    
   </div>
@@ -34,15 +41,19 @@ export default {
 </script>
 
 <style>
+table{
+  margin-left: auto;
+  margin-right: auto
+}
+
 .cen{
   text-align: center;
-  display: block;
   margin: auto;
   
 }
-th,tr{  
-  display:contents;
-  margin: auto;
+th,tr,td{  
   border: 2px solid #000000;
+  padding: 6px;
+
 }
 </style>
