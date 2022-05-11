@@ -4,22 +4,14 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>|
       <router-link to="/user">user</router-link>|
+      1
     </div>
     <router-view />
   </div>
 </template>
 
 <script>
-import axios from "axios";
-export default {
-  name: "App",
-  
 
-  async mounted() {
-    let result = await axios.get("http://192.168.1.24:5000/1");
-    console.log(result.data[0])
-  },
-}
 </script>
 
 <style>
