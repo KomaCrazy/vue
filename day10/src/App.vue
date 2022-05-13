@@ -1,9 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>   |
-      <router-link to="/about">About</router-link>  |
-      <router-link to="/user">user</router-link>
+      <h2>
+      <router-link to="/">HOME</router-link>   |
+      <router-link to="/about">ABOUT</router-link>  |
+      <router-link to="/user">USER</router-link> |
+      <router-link to="/register">REGISTER</router-link>  |
+      <router-link to="/Test">Test</router-link>
+      </h2>
     </div>
     <router-view />
   </div>
@@ -34,6 +38,7 @@
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+  text-decoration: none;
 }
 #nav a:hover{
     color: #42b983;
