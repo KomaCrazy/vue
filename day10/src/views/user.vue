@@ -23,6 +23,7 @@
 </template>
 
 <script>
+
 import axios from "axios";
 export default {
   name: "App",
@@ -38,6 +39,7 @@ export default {
     this.list=result.data
   },
 } 
+
 </script>
 
 <style>
