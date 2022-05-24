@@ -1,7 +1,8 @@
-from flask import Flask , jsonify
+from flask import Flask , jsonify,request,jsonify
 from flask_cors import CORS
 import sqlite3
 import json
+
 from tools import *
 
 app = Flask(__name__)
@@ -29,5 +30,21 @@ def link1():
         return jsonify(d)
     except Exception as e:
         print("Error : "+link1)
+
+@app.route('/register')
+def register():
+    try:
+        data = request.args
+        username = data["username"]
+        lastname = data["lastname"]
+        password = data["password"]
+        email = data["email"]
+        age = data["age"]
+        with sqlite3.connect("tabledata.sqlite")
+
+        return jsonify("OK")
+    except Exception as e:
+       return jsonify(e)
+
 if __name__ == '__main__' :
     app.run(host,port)

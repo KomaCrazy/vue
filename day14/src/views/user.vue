@@ -29,7 +29,7 @@ export default{
 },
 
 async mounted(){
-  let result = await axios.get("http://192.168.1.50:5000/1");
+  let result = await axios.get("http://192.168.1.40:5000/1");
   console.log(result.data)
   this.list = result.data
 },
