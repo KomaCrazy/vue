@@ -40,8 +40,6 @@ def register():
         password = data["password"]
         email = data["email"]
         age = data["age"]
-        with sqlite3.connect("tabledata.sqlite")
-
         return jsonify("OK")
     except Exception as e:
        return jsonify(e)
