@@ -1,0 +1,45 @@
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
+
+Vue.use(VueRouter);
+
+const routes = [
+  {
+    path: "/",
+    name: "Home",
+    component: Home,
+  },
+  {
+    path: "/about",
+    name: "About",
+    component: () =>
+      import("../views/About.vue"),
+  },
+  {
+    path: "/listdata",
+    name: "Listdata",
+    component: () =>
+      import("../views/Listdata.vue"),
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: () =>
+      import("../views/Register.vue"),
+  },
+  {
+    path: "/covid",
+    name: "Covid",
+    component: () =>
+      import("../views/Covid.vue"),
+  },
+];
+
+const router = new VueRouter({
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes,
+});
+
+export default router;
