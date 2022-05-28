@@ -44,7 +44,7 @@ export default{
     },
 
     mounted(){ 
-
+        
     },
 
     methods:{ 
@@ -60,13 +60,6 @@ export default{
             xhttp.open("GET", "http://localhost:5000/register?user="+this.user+"&password="+this.password+"&gmail="+this.email+"&contact="+this.contact,true);
             xhttp.send();
         },
-        apiReturn(){ 
-            fetch('http://localhost:5000/find')
-                .then(response => response.json())
-                .then(data => console.log(data))
-        }
-
-
     },
 }
 

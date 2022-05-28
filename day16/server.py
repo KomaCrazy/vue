@@ -22,7 +22,7 @@ def pagedata():
         cur.execute(sql, (user,password,gmail,contact))
         conn.commit()
 
-        return  jsonify(data)
+        return "succeccd"
 
     except Exception as e:
         alert = "Error :" + str(e)
