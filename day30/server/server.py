@@ -1,3 +1,8 @@
 from tools import * 
 
-print(box)
+
+@app.route('/')
+def 
+
+if __name__ == '__main__':
+    server.on()
