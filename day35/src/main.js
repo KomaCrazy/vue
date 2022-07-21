@@ -9,10 +9,9 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import VueSimpleAlert from "vue-simple-alert";
+import VueCookies from 'vue-cookies'
 
-Vue.use(VueSimpleAlert);
-Vue.use(require('vue-cookies'))
+Vue.use(VueCookies, { expire: '7d'})
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 

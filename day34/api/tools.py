@@ -13,7 +13,7 @@ table = 'db'
 
 class server :
     def error(e):
-        return {"Status":str(e)}
+        return {"status":"1"}
     def on():
         app.run(host,port)
 
